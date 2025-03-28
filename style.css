@@ -1,0 +1,204 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header img {
+    height: 36px;
+    margin-right: 10px;
+}
+
+/* Formulário */
+#form-add {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 640px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto 30px;
+}
+
+#form-add input {
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#form-add input:focus {
+    border-color: #009432;
+    outline: none;
+}
+
+#form-add button {
+    background-color: #009432;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+#form-add button:hover {
+    background-color: #007a29;
+}
+
+/* Campo de Nota Mínima */
+.nota-minima-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nota-minima-container label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nota-minima-container input {
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #f4f4f4;
+}
+
+table td {
+    font-size: 18px;
+    padding: 12px 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table td img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Seção de Médias por Matéria */
+#medias-por-materia {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#medias-por-materia strong {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#medias-por-materia span {
+    font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    #form-add input,
+    #form-add button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    table th,
+    table td {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    #form-add {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
